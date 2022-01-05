@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>Sammy Medows</title>
+  <!-- Bootstrap-->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+  <img src="images/topContainer.png" alt="">
+  <a href="javascript:void(0)"  onclick="twitchClick()"> <img id="twitchView"src="images/twitchno.png" alt="">
+  </a>
+  <div class="discord">
+
+  </div>
+  <img src="images/discordno.png" alt="">
+  <div class="youtube">
+
+  </div>
+  <img src="images/youtubeyes.png" alt="">
+  <div class="tiktok">
+
+  </div>
+  <img src="images/tiktokno.png" alt="">
+
+
+
+<script type="text/javascript">
+  function twitchClick() {
+    var Image_Id = document.getElementById('twitchView');
+    if (Image_Id.src.match("twitchno.png")) {
+      Image_Id.src = "images/twitchyes.png";
+      window.location.href = "https://www.twitch.tv/sammymedows"
+    }
+    else {
+      Image_Id.src = "images/twitchno.png";
+    }
+  }
+</script>
+
+
+</body>
+
+</html>
